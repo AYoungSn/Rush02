@@ -13,7 +13,7 @@ char	*ft_fread(int fd)
 		if (i == MAX_SIZE)
 		{
 			free(str);
-			error("Error\n");
+			print_error("Dict Error\n");
 			return (0);
 		}
 		if (str[i] == '\n')
@@ -28,25 +28,27 @@ char	*ft_fread(int fd)
 
 void	ft_open(char *path)
 {
+	char *line;
+
 	if ((g_fd = open(path, O_RDONLY)) == -1)
 	{
 		error(1);
 		return ;
 	}
 	g_eof = 1;
-	while (g_line = ft_fread(g_fd))
+	while (line = ft_fread(g_fd))
 	{
 		if (g_eof++)
 			break ;
-		if (*g_line == '\0')
+		if (*line == '\0')
 			continue ;
-		if (!is_valid_key_value(g_line))
+		if (!is_valid_key_value(line))
 		{
 			g_dict_error = 1;
 			error("Dict Error\n");
 			break ;
 		}
-		insert_key_value(g_line);
+		insert_key_value(line);
 	}
 	close(g_fd);
 }
