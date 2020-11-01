@@ -50,6 +50,7 @@ void	insert_key_value(char *str)
 	key = del_space_left(str);
 	while (*str != ':')
 		str++;
+	str++;
 	val = del_space_right(str);
 	push_front(key, val);
 }
