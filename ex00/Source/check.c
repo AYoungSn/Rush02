@@ -45,7 +45,7 @@ int	ft_is_valid_key_value(char *str)
 	{
 		if (str[i] == ':')
 			count_colon++;
-		else if (ft_is_space(str[i]))
+		else if (!ft_is_space(str[i]))
 		{
 			if (count_colon == 1)
 				count_value++;

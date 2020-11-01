@@ -5,6 +5,7 @@ int		g_case2_f;
 int		g_fd;
 t_dict	*g_dict;
 int		g_is_first;
+int		g_eof;
 
 void	ft_convert_unit(int index)
 {

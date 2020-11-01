@@ -21,6 +21,5 @@ int		main(int argc, char *argv[])
 		num = argv[1];
 	}
 	convert(num);
-	free(num);
 	return (0);
 }
