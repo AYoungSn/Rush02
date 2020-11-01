@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   rush02.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kachoi </var/mail/kachoi>                  +#+  +:+       +#+        */
+/*   By: yoahn <youngseon0218@naver.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/01 23:24:47 by kachoi            #+#    #+#             */
-/*   Updated: 2020/11/01 23:25:21 by kachoi           ###   ########.fr       */
+/*   Created: 2020/11/01 23:29:40 by yoahn             #+#    #+#             */
+/*   Updated: 2020/11/01 23:49:20 by yoahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef RUSH02_H
-# define RUSH02_H
+#ifndef _RUSH02_H
+# define _RUSH02_H
 
 # include <stdlib.h>
 # include <unistd.h>
