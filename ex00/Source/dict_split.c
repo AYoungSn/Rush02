@@ -20,8 +20,11 @@ char	*del_space_left(char *str)
 
 	i = 0;
 	while (str[i] != 0)
-		if (is_space(str[i++]))
+	{
+		if (is_space(str[i]) || str[i] == ':')
 			break ;
+		i++;
+	}
 	temp = (char*)malloc(sizeof(char) * i);
 	ft_units_copy(str, temp, i);
 	return (temp);

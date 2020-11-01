@@ -21,5 +21,14 @@ int		main(int argc, char *argv[])
 		num = argv[1];
 	}
 	convert(num);
+	t_dict *node = g_dict;
+	while (node)
+	{
+		ft_putstr(node->key);
+		ft_putstr(": ");
+		ft_putstr(node->value);
+		ft_putstr("\n");
+		node = node->next;
+	}
 	return (0);
 }
