@@ -1,4 +1,4 @@
-#include "ft_rush02.h"
+#include "rush02.h"
 
 t_dict	*create_node(char *key, char *val)
 {

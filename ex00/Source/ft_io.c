@@ -1,4 +1,4 @@
-#include "ft_rush02.h"
+#include "rush02.h"
 
 char	*ft_fread(int fd)
 {

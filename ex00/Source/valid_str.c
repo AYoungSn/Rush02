@@ -1,4 +1,4 @@
-#include "ft_rush02.h"
+#include "rush02.h"
 
 int		is_space(char ch)
 {

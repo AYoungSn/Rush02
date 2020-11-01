@@ -1,4 +1,4 @@
-#include "./ft_rush02.h"
+#include "rush02.h"
 
 void	ft_units_copy(char *str, char *number_units, int unit_count)
 {
