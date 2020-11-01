@@ -7,7 +7,7 @@ t_dict	*g_dict;
 int		g_is_first;
 int		g_eof;
 
-char    ft_str(int cnt)
+char    *ft_str(int cnt)
 {
     char    *lenth;
     int        i;
@@ -18,7 +18,7 @@ char    ft_str(int cnt)
     i = cnt;
     while (i > 0)
         lenth[i--] = '0';
-    lenthurn (lenth);
+    return (lenth);
 }
 
 void    ft_convert_unit(int index)
@@ -62,7 +62,7 @@ int        ft_convert_num(int index, char *num, char *temp)
     }
     else
         g_case2_f = 0;
-    lenthurn (lenth);
+    return (lenth);
 }
 
 void    convert(char *num)
