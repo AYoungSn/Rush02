@@ -42,10 +42,10 @@ char	*del_space_right(char *str)
 	return (temp);
 }
 
-void insert_key_value(char *str);
+void	insert_key_value(char *str);
 {
-    char *key;
-    char *val;
+    char	*key;
+    char	*val;
 
     key = del_space_left(str);
     while (*str != ':')
