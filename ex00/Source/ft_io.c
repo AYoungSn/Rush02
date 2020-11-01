@@ -1,5 +1,7 @@
 #include "rush02.h"
 
+int		g_eof;
+
 char	*ft_fread(int fd)
 {
 	int		i;
@@ -44,7 +46,6 @@ void	ft_open(char *path)
 			continue ;
 		if (!ft_is_valid_key_value(line))
 		{
-			g_dict_error = 1;
 			print_error("Dict Error\n");
 			break ;
 		}

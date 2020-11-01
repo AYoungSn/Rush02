@@ -53,7 +53,7 @@ int					ft_is_valid_number(char *str);
 int					ft_is_valid_key_value(char *str);
 
 // rush.c
-void				ft_convert_unit(int index, int count);
+void				ft_convert_unit(int index);
 int					ft_convert_num(int index, char *num, char *temp);
 void				convert(char *num);
 
