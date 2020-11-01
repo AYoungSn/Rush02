@@ -27,7 +27,7 @@ void				push_front(char *key, char *val);
 char				*get_val(char *key);
 
 //dict_split.c
-void				ft_units_copy(char *str, char *number_units, int unit_count);
+void				ft_units_copy(char *str, char *number, int unit_count);
 char				*del_space_left(char *str);
 char				*del_space_right(char *str);
 void				insert_key_value(char *str);

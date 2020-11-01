@@ -57,13 +57,12 @@ int		ft_convert_num(int index, char *num, char *temp)
 	return (lenth);
 }
 
-
 void	convert(char *num)
 {
 	int		index;
 	int		offset;
-    char	*temp;
-    
+	char	*temp;
+
     g_case3_f = 0;
 	g_case2_f = 0;
 	if (num[0] == '0')
