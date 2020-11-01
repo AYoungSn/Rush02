@@ -3,7 +3,7 @@
 int g_case3_f;
 int g_case2_f;
 
-void	ft_convert_unit(int index, int count)
+void	ft_convert_unit(int index)
 {
 	char	*str;
 	char	*lenth;
@@ -11,10 +11,10 @@ void	ft_convert_unit(int index, int count)
 
 	if ((g_case3_f == 1) && (index % 3 == 0))
 	{
-		lenth = (char *)malloc(count + 2);
-		lenth[count + 1] =  0;
+		lenth = (char *)malloc(index + 2);
+		lenth[index + 1] =  0;
 		lenth[0] = '1';
-		i = count;
+		i = index;
 		while (i > 0)
 			lenth[i--] = '0';
 		str = lenth;
