@@ -1,5 +1,5 @@
-#ifndef FT_RUSH02_H
-# define FT_RUSH02_H
+#ifndef RUSH02_H
+# define RUSH02_H
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -48,4 +48,6 @@ int					ft_is_valid_number(char *str);
 int					ft_is_valid_key_value(char *str);
 
 // rush.c
-
+void				ft_convert_unit(int index, int count);
+int					ft_convert_num(int index, char *num, char *temp);
+void				conver(char *num);
