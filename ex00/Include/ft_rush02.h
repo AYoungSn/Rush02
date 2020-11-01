@@ -33,3 +33,8 @@ void				ft_open(char *path);
 //valid_str
 int					ft_is_same(char *s1, char *s2);
 int					is_space(char ch);
+
+//print.c
+int					ft_strlen(char *str);
+void				ft_putstr(char *str);
+void				print_error(char *str);
