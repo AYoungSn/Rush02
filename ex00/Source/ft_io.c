@@ -13,7 +13,7 @@ char	*ft_fread(int fd)
 		if (i == MAX_SIZE)
 		{
 			free(str);
-			print_error("Dict Error\n");
+			print_error("Dict Error");
 			return (0);
 		}
 		if (str[i] == '\n')
@@ -44,8 +44,7 @@ void	ft_open(char *path)
 			continue ;
 		if (!ft_is_valid_key_value(line))
 		{
-			g_dict_error = 1;
-			print_error("Dict Error\n");
+			print_error("Dict Error");
 			break ;
 		}
 		insert_key_value(line);

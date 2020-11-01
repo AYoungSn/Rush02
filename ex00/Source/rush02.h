@@ -27,7 +27,7 @@ void				push_front(char *key, char *val);
 char				*get_val(char *key);
 
 //dict_split.c
-void				ft_units_copy(char *str, char *number_units, int unit_count);
+void				ft_units_copy(char *str, char *number, int unit_count);
 char				*del_space_left(char *str);
 char				*del_space_right(char *str);
 void				insert_key_value(char *str);
@@ -53,7 +53,7 @@ int					ft_is_valid_number(char *str);
 int					ft_is_valid_key_value(char *str);
 
 // rush.c
-void				ft_convert_unit(int index, int count);
+void				ft_convert_unit(int index);
 int					ft_convert_num(int index, char *num, char *temp);
 void				convert(char *num);
 

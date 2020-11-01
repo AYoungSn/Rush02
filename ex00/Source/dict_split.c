@@ -44,12 +44,13 @@ char	*del_space_right(char *str)
 
 void	insert_key_value(char *str)
 {
-    char	*key;
-    char	*val;
+	char	*key;
+	char	*val;
 
-    key = del_space_left(str);
-    while (*str != ':')
-        str++;
-    val = del_space_right(str);
-    push_front(key, val);
+	key = del_space_left(str);
+	while (*str != ':')
+		str++;
+	str++;
+	val = del_space_right(str);
+	push_front(key, val);
 }

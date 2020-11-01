@@ -1,7 +1,11 @@
 #include "rush02.h"
 
-int g_case3_f;
-int g_case2_f;
+int		g_case3_f;
+int		g_case2_f;
+int		g_fd;
+t_dict	*g_dict;
+int		g_is_first;
+int		g_eof;
 
 char    ft_str(int cnt)
 {
