@@ -15,20 +15,16 @@ int		main(int argc, char *argv[])
 		ft_open(argv[1]);
 		num = argv[2];
 	}
-	else
+	else if (argc == 2)
 	{
 		ft_open("numbers.dict");
 		num = argv[1];
 	}
-	convert(num);
-	t_dict *node = g_dict;
-	while (node)
+	else
 	{
-		ft_putstr(node->key);
-		ft_putstr(": ");
-		ft_putstr(node->value);
-		ft_putstr("\n");
-		node = node->next;
+		print_error("Error");
+		return (0);
 	}
+	convert(num);
 	return (0);
 }

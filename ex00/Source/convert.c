@@ -18,17 +18,17 @@ char    *ft_str(int cnt)
     i = cnt;
     while (i > 0)
         lenth[i--] = '0';
-    return (lenth);
+	return (lenth);
 }
 
 void    ft_convert_unit(int index)
 {
-    char    *str;
+	char    *str;
 
-    if (g_case3_f && index % 3 == 0)
-    {
-        str = ft_str(index);
-        ft_print(get_val(str));
+	if (g_case3_f && index % 3 == 0)
+	{
+		str = ft_str(index);
+		ft_print(get_val(str));
         free(str);
         g_case3_f = 0;
     }
@@ -36,7 +36,7 @@ void    ft_convert_unit(int index)
         ft_print(get_val("100"));
 }
 
-int        ft_convert_num(int index, char *num, char *temp)
+int		ft_convert_num(int index, char *num, char *temp)
 {
     int lenth;
 
@@ -67,12 +67,12 @@ int        ft_convert_num(int index, char *num, char *temp)
 
 void    convert(char *num)
 {
-    int        index;
-    char    *temp;
-    int        offset;
+    int		index;
+    char	*temp;
+    int		offset;
 
     if (num[0] == '0')
-        ft_print(get_val("0"));
+		ft_print(get_val("0"));
     else
     {
         temp = (char*)malloc(3);
