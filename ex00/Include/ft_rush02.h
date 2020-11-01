@@ -38,3 +38,9 @@ int					is_space(char ch);
 int					ft_strlen(char *str);
 void				ft_putstr(char *str);
 void				print_error(char *str);
+
+// check.c
+
+
+// rush.c
+
