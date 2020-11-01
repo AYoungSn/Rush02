@@ -2,7 +2,7 @@
 
 int		main(int argc, char *argv[])
 {
-	char *str;
+	char *num;
 
 	g_is_first = 1;
 	g_read_error = 0;
@@ -22,7 +22,7 @@ int		main(int argc, char *argv[])
 		ft_open("../numbers.dict");
 		num = argv[1];
 	}
-	convert_num(num);
+	convert(num);
 	free(num);
 	return (0);
 }

@@ -18,6 +18,7 @@ int	ft_is_valid_number(char *str)
 {
 	int i;
 
+	i = 0;
 	if (!str || (*str == '0' && *(str + 1)))
 		return (0);
 	while (str[i] != '\0')
@@ -38,7 +39,7 @@ int	ft_is_valid_key_value(char *str)
 
 	count_key = 0;
 	count_value = 0;
-	count_value = 0;
+	count_colon = 0;
 	i = 0;
 	while (str[i] != '\0')
 	{

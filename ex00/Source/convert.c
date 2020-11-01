@@ -1,9 +1,9 @@
-#include "ft_rush02.h"
+#include "rush02.h"
 
 int g_case3_f;
 int g_case2_f;
 
-void	ft_convert_unit(int index,int count)
+void	ft_convert_unit(int index, int count)
 {
 	char	*str;
 	char	*lenth;

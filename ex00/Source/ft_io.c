@@ -32,20 +32,20 @@ void	ft_open(char *path)
 
 	if ((g_fd = open(path, O_RDONLY)) == -1)
 	{
-		error(1);
+		print_error("Dict Error");
 		return ;
 	}
 	g_eof = 1;
-	while (line = ft_fread(g_fd))
+	while ((line = ft_fread(g_fd)))
 	{
 		if (g_eof++)
 			break ;
 		if (*line == '\0')
 			continue ;
-		if (!is_valid_key_value(line))
+		if (!ft_is_valid_key_value(line))
 		{
 			g_dict_error = 1;
-			error("Dict Error\n");
+			print_error("Dict Error\n");
 			break ;
 		}
 		insert_key_value(line);
