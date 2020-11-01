@@ -14,6 +14,7 @@ typedef struct		s_dict
 
 extern t_dict		*g_dict;
 extern int			g_fd;
+extern int			g_is_first;
 
 //linked_list.c
 t_dict				*create_node(char *key, char *val);
@@ -38,9 +39,13 @@ int					is_space(char ch);
 int					ft_strlen(char *str);
 void				ft_putstr(char *str);
 void				print_error(char *str);
+void				ft_print(char *str);
 
 // check.c
-
+int					ft_is_space(char ch);
+int					ft_is_number(char ch);
+int					ft_is_valid_number(char *str);
+int					ft_is_valid_key_value(char *str);
 
 // rush.c
 
