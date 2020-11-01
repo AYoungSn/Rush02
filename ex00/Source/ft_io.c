@@ -9,7 +9,7 @@ char	*ft_fread(int fd)
 	str = (char*)malloc(MAX_SIZE + 1);
 	while (read(fd, str + i, 1) == 1)
 	{
-		//g_eof = 0;
+		g_eof = 0;
 		if (i == MAX_SIZE)
 		{
 			free(str);
@@ -33,4 +33,20 @@ void	ft_open(char *path)
 		error(1);
 		return ;
 	}
+	g_eof = 1;
+	while (g_line = ft_fread(g_fd))
+	{
+		if (g_eof++)
+			break ;
+		if (*g_line == '\0')
+			continue ;
+		if (!is_valid_key_value(g_line))
+		{
+			g_dict_error = 1;
+			error("Dict Error\n");
+			break ;
+		}
+		insert_key_value(g_line);
+	}
+	close(g_fd);
 }
